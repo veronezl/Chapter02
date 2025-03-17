@@ -98,3 +98,15 @@ unsafe
     Console.WriteLine($"Half uses {sizeof(Half)} bytes and can store numbers in the range {Half.MinValue:N0} to {Half.MaxValue:N0}.");
     Console.WriteLine($"Int128 uses {sizeof(Int128)} bytes and can store numbers in the range {Int128.MinValue:N0} to {Int128.MaxValue:N0}.");
 }
+
+// Exemplo de default
+
+Console.WriteLine($"default(int) = {default(int)}");
+Console.WriteLine($"default(bool) = {default(bool)}");
+Console.WriteLine($"default(DateTime) = {default(DateTime)}");
+Console.WriteLine($"default(string) = {default(string) ?? "<NULL>"}");
+
+int number = 14;
+Console.WriteLine($"number set to: {number}");
+number = default;
+Console.WriteLine($"number set to default: {number}");
